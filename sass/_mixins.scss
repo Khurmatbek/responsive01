@@ -1,7 +1,14 @@
 /*  created first mixin */
 
-@mixin unStyledList() {
+@mixin unStyledList {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+/*  display for */
+@mixin flexElement($fDirection, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $fDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
 }
